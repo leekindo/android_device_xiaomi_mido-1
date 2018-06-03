@@ -46,9 +46,6 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
 TARGET_KERNEL_CONFIG := mido_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8953
 
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-8.x/bin
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-
 ifneq ($(HOST_OS),darwin)
 SDCLANG := true
 SDCLANG_PATH := prebuilts/clang/host/linux-x86/sdclang-4.0/bin
